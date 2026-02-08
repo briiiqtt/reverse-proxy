@@ -1,0 +1,4 @@
+proxy_set_header Host $host; # nginx가 요청을 받으면 기본적으로 Host 헤더를 자기 자신으로 바꾸거나 초기화할 수 있는데, 이 설정은 클라가 요청한 원본 도메인을 유지하는 것
+proxy_set_header X-Real-IP $remote_addr; # `X-Real-IP`: 클라의 실제 IP를 담는 헤더; `$remote_addr`: 이 nginx에 붙은 요청자의 IP
+proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for; # `X-Forwarded-For`: 거쳐온 IP 목록을 담는 헤더 (구분자 ","); `$proxy_add_x_forwarded_for`: 그 목록에 현재 클라 IP를 추가
+proxy_set_header X-Forwarded-Proto $scheme; # HTTPS 여부

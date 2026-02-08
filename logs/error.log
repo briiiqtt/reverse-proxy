@@ -1,0 +1,10 @@
+2026/02/08 22:51:00 [emerg] 9496#10800: CreateFile() "C:\briiiqtt\repo\01-in-Progress\bombs.kr\reverse-proxy/conf/nginx.conf" failed (3: The system cannot find the path specified)
+2026/02/08 22:51:17 [emerg] 3348#5040: CreateFile() "./proxy_headers.incl" failed (2: The system cannot find the file specified) in ./nginx.conf:16
+2026/02/08 22:52:03 [emerg] 18796#15664: CreateFile() "C:\briiiqtt\repo\01-in-Progress\bombs.kr\reverse-proxy/conf/nginx.conf" failed (3: The system cannot find the path specified)
+2026/02/08 22:52:34 [emerg] 68#16268: CreateFile() "./proxy_headers.incl" failed (2: The system cannot find the file specified) in ./nginx.conf:16
+2026/02/08 22:52:54 [emerg] 17920#14020: CreateFile() "C:/briiiqtt/repo/01-in-Progress/bombs.kr/reverse-proxy/proxy_headers.incl" failed (2: The system cannot find the file specified) in C:/briiiqtt/repo/01-in-Progress/bombs.kr/reverse-proxy/nginx.conf:16
+2026/02/08 22:52:58 [emerg] 11992#10008: CreateFile() "C:/briiiqtt/repo/01-in-Progress/bombs.kr/reverse-proxy/proxy_headers.incl" failed (2: The system cannot find the file specified) in C:/briiiqtt/repo/01-in-Progress/bombs.kr/reverse-proxy/nginx.conf:16
+2026/02/08 22:53:41 [emerg] 19220#1844: host not found in upstream "frontend" in C:/briiiqtt/repo/01-in-Progress/bombs.kr/reverse-proxy/nginx.conf:14
+2026/02/08 22:54:23 [emerg] 11812#14016: CreateFile() "C:\briiiqtt\repo\01-in-Progress\bombs.kr\reverse-proxy/conf/nginx.conf" failed (3: The system cannot find the path specified)
+2026/02/08 23:09:28 [emerg] 18120#7560: "proxy_pass" directive is not allowed here in C:\briiiqtt\repo\01-in-Progress\bombs.kr\reverse-proxy/conf/nginx.conf:12
+2026/02/08 23:10:06 [emerg] 3296#244: host not found in upstream "short-url-gateway" in C:\briiiqtt\repo\01-in-Progress\bombs.kr\reverse-proxy/conf/nginx.conf:13

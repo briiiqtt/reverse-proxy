@@ -1,0 +1,19 @@
+services:
+  nginx:
+    image: nginx:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./conf:/etc/nginx
+      - /var/www/certbot:/var/www/certbot:ro # 인증용 파일이 공유될 경로
+      - /etc/letsencrypt:/etc/letsencrypt:ro # 실제 인증서가 저장될 경로
+    networks:
+      - external-net
+
+networks:
+  external-net:
+    external: true
