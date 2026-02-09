@@ -23,6 +23,8 @@ services:
     pid: host
     network_mode: host
     restart: unless-stopped
+    group_add:
+      - "999"
     cap_add:
       - SYS_PTRACE
       - SYS_ADMIN
@@ -41,6 +43,7 @@ services:
       - /etc/os-release:/host/etc/os-release:ro
       - /var/log:/host/var/log:ro
       - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /var/lib/docker/containers:/var/lib/docker/containers:ro
 
 volumes:
   netdataconfig:
