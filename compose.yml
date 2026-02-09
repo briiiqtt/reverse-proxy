@@ -42,7 +42,6 @@ services:
       - /var/log:/host/var/log:ro
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - /var/lib/docker/containers:/var/lib/docker/containers:ro
-      - ./conf/nginx_monitoring.conf:/etc/netdata/go.d/nginx.conf:ro
 volumes:
   netdataconfig:
   netdatalib:
